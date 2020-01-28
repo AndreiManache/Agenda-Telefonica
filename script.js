@@ -9,7 +9,8 @@ function addRow(e){
 var newNume = document.querySelector(".nume").value;
 var newTelefon = document.querySelector(".telefon").value;    
 
-var table = document.createElement("table").innerHTML = document.createElement("thead");
+var table = document.createElement("table")
+var thead= document.createElement("thead");
+table.appendChild(thead);
 
-console.log(table);
 }
