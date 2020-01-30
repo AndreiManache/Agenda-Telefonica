@@ -13,15 +13,24 @@
         <h1 class="h"><strong>Agenda</strong></h1>
 
         <div class="zone1">
-            <form id="form" class="form">
+            <form class="form" onsubmit="addInput(event)">
                 <label>Nume:<input class="nume" type="text"></label>
                 <label>Telefon:<input class="telefon" type="text"></label><br>
                 <input type="submit" class="btn" value="Adauga Contact">
             </form>
         </div>
 
-        <div>
-            
+        <div  class ="zone2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Nume</td>
+                        <td>Telefon</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 <script src="script.js"></script>   

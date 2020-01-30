@@ -33,6 +33,7 @@ html , body {
     background-color: rgb(245, 163, 39);
     border-radius: 5px;
     margin: 5px;
+    visibility: hidden;
 }
 .form{
     margin-left: 40px;
@@ -44,4 +45,9 @@ html , body {
 .btn{
     margin: 10px;
     margin-left: 180px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
 }
