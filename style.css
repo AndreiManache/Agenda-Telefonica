@@ -16,7 +16,7 @@ html , body {
     display: grid;
 }
 
-.h{
+h1{
     place-self: center;
     margin:0;
 }
@@ -24,17 +24,12 @@ html , body {
 .zone1{
     background-color: rgb(245, 163, 39);
     border-radius: 5px;
-    margin: 5px;
+    margin-bottom: 5px;
     display: grid;
     
 }
 
-.zone2 {
-    background-color: rgb(245, 163, 39);
-    border-radius: 5px;
-    margin: 5px;
-    visibility: hidden;
-}
+
 .form{
     margin-left: 40px;
     
@@ -50,4 +45,7 @@ html , body {
 table{
     width: 100%;
     text-align: center;
+    background-color: rgb(245, 163, 39);
+    border-radius: 5px;
+    border-collapse: collapse;
 }
