@@ -5,21 +5,29 @@ var indexEdit;
 function draw(){
     var str = "";
 
+    
+    
     for(let i=0; i<list.length ; i++){
 
         str+= `
-<tbody>
+
 <tr>
     <td>${list[i].name}</td>
     <td>${list[i].number}</td>
     <td><button class="modifica" onclick="edit(${i})">Modifica</button></td>
     <td><button class="sterge" onclick="del(${i})">Sterge</button></td>
-</tr>
-</tbody>`;
+</tr>`;
 
-document.querySelector("table tbody").innerHTML = str;
+    document.querySelector("table tbody").innerHTML = str;
+
 
     }
+        if(list.length === 0){
+        document.querySelector("table tbody").classList.add('remove');
+        }else{
+    document.querySelector("table tbody").classList.remove('remove');
+        }
+
   }
 
   function del(idx){
@@ -42,14 +50,16 @@ document.querySelector("table tbody").innerHTML = str;
       }else{
           list[indexEdit]=newItem;
       }
+      indexEdit = undefined;
       draw();
   }
 
   function edit(idx){
-        document.querySelector("name=['nume']").value = list[idx].nume;
-        document.querySelector("name=['telefon']").value = list[idx].telefon;
+        document.querySelector(".nume").value = list[idx].name;
+        document.querySelector(".telefon").value = list[idx].number;
         window.indexEdit = idx;
   }
+  
 
 
 

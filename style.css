@@ -36,7 +36,9 @@ h1{
     align-self: center;
     
 }
-
+.remove{
+    display: none;
+}
 .btn{
     margin: 10px;
     margin-left: 180px;
