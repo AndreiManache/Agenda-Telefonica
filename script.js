@@ -51,6 +51,8 @@ function draw(){
           list[indexEdit]=newItem;
       }
       indexEdit = undefined;
+      document.querySelector(".nume").value = "";
+      document.querySelector(".telefon").value = "";
       draw();
   }
 
