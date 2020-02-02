@@ -39,7 +39,15 @@ function draw(){
 
   function add(event){
     event.preventDefault();
-
+    if(document.querySelector(".nume").value.length === 0 || document.querySelector(".telefon").value.length === 0){
+      /*console.log(document.querySelector(".name"));*/
+      document.querySelector(".nume").classList.add('invalid');
+      document.querySelector(".telefon").classList.add('invalid');
+      return false;
+    }else if(document.querySelector(".nume").value.length > 0 && document.querySelector(".telefon").value.length > 0){
+        document.querySelector(".nume").classList.remove("invalid");
+        document.querySelector(".telefon").classList.remove("invalid");
+    }
       var newItem = {
           name:document.querySelector(".nume").value,
           number:document.querySelector(".telefon").value
@@ -50,6 +58,7 @@ function draw(){
       }else{
           list[indexEdit]=newItem;
       }
+
       indexEdit = undefined;
       document.querySelector(".nume").value = "";
       document.querySelector(".telefon").value = "";

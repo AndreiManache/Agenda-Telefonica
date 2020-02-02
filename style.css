@@ -6,7 +6,9 @@ html , body {
     height: 100%;
     background-color:rgb(245, 238, 198);
 }
-
+.invalid{
+    border: 2px solid red;
+}
 .wrapper{
     width: 550px;
     height: 350px;;
